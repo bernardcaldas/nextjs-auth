@@ -68,17 +68,22 @@ POST /api/addCredits - Adds credits to the user's account.
 
 The application interacts with a MariaDB database to store and retrieve user data and credits. The database has a single table, users, which stores the email, name, image, credits, and totalVisits of each user.
 
-    When a user logs in, their email, name, and image are saved to the database if they do not already exist. If the user is logging in for the first time, they are given a certain number of initial credits, and their totalVisits is set to 1. If the user has logged in before, their totalVisits is incremented by 1.
+When a user logs in, their email, name, and image are saved to the database if they do not already exist. If the user is logging in for the first time, they are given a certain number of initial credits, and their totalVisits is set to 1. If the user has logged in before, their totalVisits is incremented by 1.
 
-    When a user purchases credits, the credits field in the database is updated to reflect the new total.
+When a user purchases credits, the credits field in the database is updated to reflect the new total.
 
-    When a user uses a credit, the credits field in the database is decremented by 1.
+When a user uses a credit, the credits field in the database is decremented by 1.
 
-mariaDB commands : 
+
+
+mariaDB  status and important commands : 
 
 `mariadb -u root -p ` 
 
 `sudo systemctl status mariadb`
+
+
+
 
 
 ## Authentication
