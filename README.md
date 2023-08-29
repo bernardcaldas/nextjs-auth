@@ -1,13 +1,12 @@
 Next Auth
 
-A brief description of what this project does and who it's for. What problem does it solve?
 Features
 
-    User authentication with NextAuth.js and Google OAuth
-    Initial credits for new users
-    Functionality to use credits
-    Page for purchasing more credits
-    Integration with MariaDB database
+User authentication with NextAuth.js and Google OAuth
+Initial credits for new users
+Functionality to use credits
+Page for purchasing more credits
+Integration with MariaDB database
 
 Technologies Used
 
@@ -42,7 +41,7 @@ or
 
 npm install
 
-    Create a .env.local file in the root of the project and add the following environment variables:
+Create a .env.local file in the root of the project and add the following environment variables:
 
 makefile
 
@@ -50,9 +49,9 @@ NEXT_PUBLIC_GOOGLE_ID=your-google-client-id
 NEXT_PUBLIC_GOOGLE_SECRET=your-google-client-secret
 DATABASE_URL=your-database-url
 
-    Run the development server:
+Run the development server:
 
-yarn dev
+`yarn dev`
 
 
 Open http://localhost:3000 with your browser to see the result.
@@ -95,11 +94,11 @@ Components
 
 The main React components of the application are:
 
-    Navbar: This component is responsible for rendering the navigation bar at the top of the page. It shows different options based on whether the user is logged in or not.
+Navbar: This component is responsible for rendering the navigation bar at the top of the page. It shows different options based on whether the user is logged in or not.
 
-    CreditButton: This component renders a button that, when clicked, decrements the user's credits by 1.
+CreditButton: This component renders a button that, when clicked, decrements the user's credits by 1.
 
-    CreditCardsComponent: This component renders three different "credit cards" that the user can click on to purchase more credits.
+CreditCardsComponent: This component renders three different "credit cards" that the user can click on to purchase more credits.
 
 ## Context
 
